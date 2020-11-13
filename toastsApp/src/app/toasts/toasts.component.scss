@@ -1,0 +1,26 @@
+.fail {
+    position: relative;
+    width: 200px;
+    background-color: rgba($color: #eb4242, $alpha: 1.0);
+}
+.success {
+    position: relative;
+    width: 250px;
+    height: 45px;
+    margin-bottom: 10px;
+    background-color: rgba($color: #bcf85d, $alpha: 1.0)
+}
+
+
+#content, title {
+    bottom: 20px;
+    position: relative;
+}
+
+#closes {
+    position: relative;
+    text-align: center;
+    left: 87%;
+    width: 50px;
+    background-color: #4aff68;
+}

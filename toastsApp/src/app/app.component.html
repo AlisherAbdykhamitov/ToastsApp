@@ -1,0 +1,39 @@
+<div id = "all">
+<div id = "bg"></div>
+
+
+<div id = 'inputs'>
+  <input placeholder="Title" [(ngModel)] = 'name'>
+  <input placeholder="Content"  [(ngModel)] = 'content'>
+</div>
+<div id = 'SucFail'>
+  <mat-radio-button #success> isSuccess </mat-radio-button>
+  <mat-radio-button #fail> isFailed </mat-radio-button>
+</div>
+
+<mat-radio-group id = 'horizontal'>
+  <mat-label>Horizontal position</mat-label>
+  <mat-radio-button #startHor value = 'startH'>Start</mat-radio-button>
+  <mat-radio-button #cenHor value = 'centerH'>Center</mat-radio-button>
+  <mat-radio-button #endHor value = 'endH'>End</mat-radio-button>
+</mat-radio-group>
+
+<mat-radio-group id = 'vertical'>
+  <mat-label>Vertical position</mat-label>
+  <mat-radio-button #topVert value = 'topV'>Top</mat-radio-button>
+  <mat-radio-button #cenVert value = 'cenV'>Center</mat-radio-button>
+  <mat-radio-button #botVert value = 'botV'>Bottom</mat-radio-button>
+</mat-radio-group>
+
+<div id = 'toggles'>
+  <mat-slide-toggle  #close>HasCloseButton</mat-slide-toggle>
+  <mat-slide-toggle #duration>ShowDuration</mat-slide-toggle>
+  <mat-slide-toggle #showtitle>ShowTitle</mat-slide-toggle>
+</div>
+
+<mat-slider tickInterval="1" min="1" max="10" [(ngModel)] = 'durat'>Duration</mat-slider>
+
+<button mat-button (click) = 'show()'>Show toast</button>
+
+
+</div>

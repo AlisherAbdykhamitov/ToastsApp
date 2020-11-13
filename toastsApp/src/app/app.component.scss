@@ -1,0 +1,57 @@
+#all{
+    display: inline;
+}
+#bg{
+    width: 1250px;
+    height: 350px;
+    background-image: url(1.jpg);
+}
+
+#horizontal, #vertical {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 10px;
+}
+#vertical mat-radio-button, #horizontal mat-radio-button {
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+#toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#toggle mat-slide-toggle {
+    margin-right: 50px;
+    color: fuchsia;
+    
+}
+
+#inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 3px;
+}
+#success{
+    margin-right: 15px;
+}
+#SucFail {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+
+
+}
+
+button {
+    position: absolute;
+    left: 60%;
+    background-color: rgb(59, 194, 212);
+}
