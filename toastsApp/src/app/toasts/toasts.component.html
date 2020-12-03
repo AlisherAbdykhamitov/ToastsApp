@@ -1,4 +1,4 @@
-<mat-card [class] = "color ? 'fail' : 'success'">
+<mat-card @toast [class] = "color ? 'fail' : 'success'">
     <div *ngIf = 'hasClose'>
       <button mat-button (click) = 'close()' id = 'closes'>
         X
@@ -7,3 +7,8 @@
     <h1 *ngIf = 'hasTitle' id = 'title'>{{ title }}</h1>
     <p id = 'content'>{{ content }}</p>
   </mat-card>
+
+
+
+
+
